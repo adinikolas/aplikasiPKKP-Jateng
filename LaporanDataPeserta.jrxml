@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LaporanDataPeserta" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a5c9b49-9dc5-422a-ac69-e92cf61ef530">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="dbpkkp"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false"/>
+	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM data_peserta
+ORDER BY peserta_id ASC]]>
+	</queryString>
+	<field name="peserta_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_nama" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_nama"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_nama"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_kelamin" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_kelamin"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_kelamin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_usia" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_usia"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_usia"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_alamat" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_alamat"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_alamat"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_provinsi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_provinsi"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_provinsi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_kabkota" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_kabkota"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_kabkota"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_kecamatan" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_kecamatan"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_kecamatan"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_kelurahan" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_kelurahan"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_kelurahan"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_surat_dokter" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_surat_dokter"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_surat_dokter"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_skck" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_skck"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_skck"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_status"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_ipk" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_ipk"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_ipk"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_email"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<field name="peserta_telp" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="peserta_telp"/>
+		<property name="com.jaspersoft.studio.field.label" value="peserta_telp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="data_peserta"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<image>
+				<reportElement x="725" y="0" width="77" height="102" uuid="651ccc4b-e999-40fe-bcbf-1f25bcfc98af"/>
+				<imageExpression><![CDATA["cherry.jpg"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="721" height="66" backcolor="#000000" uuid="d8d9e644-3a32-491d-97cb-a277aff17133"/>
+				<staticText>
+					<reportElement style="Title" x="0" y="0" width="370" height="66" uuid="27d8f6ee-f0a9-44f6-a160-1763c3b00f30"/>
+					<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="26" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Laporan Data Peserta]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="SubTitle" x="370" y="37" width="316" height="29" uuid="cfa21334-0634-4605-9ea7-aca4981f67e4"/>
+					<textElement textAlignment="Right">
+						<font size="22" isBold="false"/>
+					</textElement>
+					<text><![CDATA[PKKP Jawa Tengah]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="70" width="721" height="32" forecolor="#000000" backcolor="#CC0000" uuid="b0c895f6-6dbd-477d-9858-9ad66af087e1"/>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement x="553" y="12" width="144" height="20" forecolor="#FFFFFF" uuid="a33fce3b-20c1-4696-873a-fe134d1e7d88"/>
+					<textElement textAlignment="Right">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch">
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="53" height="18" forecolor="#000000" uuid="9d1a85ac-e6f8-4652-a3a0-3122e3b21b72">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0ebdc46c-78af-407a-ada6-13946f7ac06a"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="53" y="0" width="53" height="18" forecolor="#000000" uuid="f321e990-6622-4965-b120-b20f007fa720">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="695c9499-10c8-4209-b8e4-c07c8d135d1e"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="106" y="0" width="53" height="18" forecolor="#000000" uuid="3921ecc0-33af-4d3c-8b9c-7c0488ce1cfd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2192dac7-84c6-4958-b4f8-a198a6c6cf61"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="159" y="0" width="53" height="18" forecolor="#000000" uuid="56c0b57c-650b-4dcc-ba90-4b884e6b4b5c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2c76fef2-9310-4817-aaa2-e18e461d01d6"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_usia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="212" y="0" width="53" height="18" forecolor="#000000" uuid="656affda-8bdf-436b-9912-fd606149a8e9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6897601-a72f-4a15-a336-adae394cef5d"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="265" y="0" width="53" height="18" forecolor="#000000" uuid="c756e297-a29e-46dd-b25e-24ed84b655d7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="757baf85-3bbe-4598-8b5f-206aeb0c7e41"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_provinsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="318" y="0" width="53" height="18" forecolor="#000000" uuid="a0caa376-1122-4ec7-a6e6-744146f0a687">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8bc3cf34-0675-480b-8f18-55c0116cb13b"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_kabkota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="371" y="0" width="53" height="18" forecolor="#000000" uuid="54387fdb-2833-4fe3-ac12-24a937df26ea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ed8fd6de-2e5b-404b-8606-cb7c8df3d934"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_kecamatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="424" y="0" width="53" height="18" forecolor="#000000" uuid="26235eb3-7486-473e-adad-4200af7efbd6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f401693-0da6-42c7-a1e2-a10864023a98"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_kelurahan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="477" y="0" width="53" height="18" forecolor="#000000" uuid="1b7a7dc9-d996-44f3-abc3-99c8f0d14d13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1ef1b827-6067-480d-88c3-76aa3f0e7e2f"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_surat_dokter]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="530" y="0" width="53" height="18" forecolor="#000000" uuid="3ff6e00f-b580-4b35-ad17-21c7e68a98a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f4995ab6-69eb-409d-980c-0751bf14d984"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_skck]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="583" y="0" width="53" height="18" forecolor="#000000" uuid="fb60a1a4-74de-40e6-97c5-6b683df49923">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9347d93e-7032-4e23-a51d-e80c137be617"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="636" y="0" width="53" height="18" forecolor="#000000" uuid="fffecab6-253c-4071-899b-df2628ced70b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f496555a-431f-4b00-8740-d23f6ac61b38"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_ipk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="689" y="0" width="53" height="18" forecolor="#000000" uuid="6475ca83-8e4f-4b8f-8da2-23eff9c4ec42">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0a537eab-5de4-4352-8d21-ac7ff663017f"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="742" y="0" width="53" height="18" forecolor="#000000" uuid="a98d43f7-a29d-4adb-8bba-dddcaa95abfc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4f700b4-d896-4280-8da0-05635b06b5e2"/>
+				</reportElement>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[peserta_telp]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="797" height="18" uuid="34a2ae4b-4055-476b-8676-d499f6af510b"/>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="0" y="0" width="53" height="18" uuid="55463464-aa21-48ed-af09-0be562eae908">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0ebdc46c-78af-407a-ada6-13946f7ac06a"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_id}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="53" y="0" width="53" height="18" uuid="102cbbfe-20d8-4fd2-8960-c5abdcf94fb2">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="695c9499-10c8-4209-b8e4-c07c8d135d1e"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_nama}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="106" y="0" width="53" height="18" uuid="cc2a3b75-855c-4c02-9c44-b5d59412a393">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2192dac7-84c6-4958-b4f8-a198a6c6cf61"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_kelamin}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="159" y="0" width="53" height="18" uuid="3a7f5838-ff95-4e9c-9285-cf08f868011c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2c76fef2-9310-4817-aaa2-e18e461d01d6"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_usia}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="212" y="0" width="53" height="18" uuid="3e300d4e-512a-4e9a-b35b-2ee18b65a52a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6897601-a72f-4a15-a336-adae394cef5d"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_alamat}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="265" y="0" width="53" height="18" uuid="86ccc878-a136-474f-b828-ea42cc14ba5c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="757baf85-3bbe-4598-8b5f-206aeb0c7e41"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_provinsi}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="318" y="0" width="53" height="18" uuid="aa1d7c7a-bc28-4465-8fb1-874bacf9586e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8bc3cf34-0675-480b-8f18-55c0116cb13b"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_kabkota}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="371" y="0" width="53" height="18" uuid="a0883f8c-431b-452b-ade2-76172ade13c7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ed8fd6de-2e5b-404b-8606-cb7c8df3d934"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_kecamatan}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="424" y="0" width="53" height="18" uuid="908a117e-d7e5-4f2c-a5f9-283738a4e12f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f401693-0da6-42c7-a1e2-a10864023a98"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_kelurahan}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="477" y="0" width="53" height="18" uuid="028acd90-e1ae-4fe7-b909-2a17e529a62d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1ef1b827-6067-480d-88c3-76aa3f0e7e2f"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_surat_dokter}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="530" y="0" width="53" height="18" uuid="385603f6-bdfd-41bf-9738-5ecaa61309fd">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f4995ab6-69eb-409d-980c-0751bf14d984"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_skck}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="583" y="0" width="53" height="18" uuid="e2eb2efe-ea21-49be-943c-4ea8d80f2e15">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9347d93e-7032-4e23-a51d-e80c137be617"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_status}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="636" y="0" width="53" height="18" uuid="c0e504ed-5df1-459b-a962-1d67d0f01008">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f496555a-431f-4b00-8740-d23f6ac61b38"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_ipk}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="689" y="0" width="53" height="18" uuid="725880f4-dc39-40ba-b34a-1d1206aaab72">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0a537eab-5de4-4352-8d21-ac7ff663017f"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_email}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement style="Detail" positionType="Float" x="742" y="0" width="53" height="18" uuid="89ee90f5-5d05-4a3a-978f-e8527d239b36">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4f700b4-d896-4280-8da0-05635b06b5e2"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{peserta_telp}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="501ac6c4-e9d4-43cb-ba6b-7f2f44394cf3"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="802" height="25" forecolor="#D0B48E" backcolor="#000000" uuid="ffb10ec8-0371-4545-8eaa-96d62ad3cec0"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="757" y="3" width="40" height="20" forecolor="#FFFFFF" uuid="b5521ea6-5f36-4864-856f-58d0bcd011f2"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="677" y="3" width="80" height="20" forecolor="#FFFFFF" uuid="e625ea3c-1741-4cfe-81cf-fbbdd00162c8"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="2" y="3" width="197" height="20" forecolor="#FFFFFF" uuid="0c9f7e91-d3f5-47f9-82b7-0b2b3a43a5d6"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
